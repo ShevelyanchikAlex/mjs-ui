@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: montserrat;
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background: linear-gradient(120deg, #5caee3, #26417c);
     height: 100vh;
     overflow: hidden;
 }
@@ -21,6 +20,7 @@ body {
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid silver;
+    color: #2691d9;
 }
 
 .login-container form {

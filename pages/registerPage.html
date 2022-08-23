@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/registerStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#load").load("./general/header.html");
+        });
+    </script>
+    <title>Register</title>
+</head>
+
+<div id="load"></div>
+<body>
+<div class="register-container">
+    <h1>Register</h1>
+    <form method="post">
+        <div class="row">
+            <div class="column">
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>First Name</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="txt-field">
+                    <input type="email" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Last Name</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Repeat Password</label>
+                </div>
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Address</label>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-column">
+            <div class="button">
+                <button type="button" class="cancel-button" href="#">Cancel</button>
+            </div>
+            <div class="button"><input class="register-button" type="submit" value="Register"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
