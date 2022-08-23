@@ -121,6 +121,7 @@ header {
 }
 
 .dropdown-menu {
+    z-index: 10;
     background: #efefef;
     position: absolute;
     top: 55px;
