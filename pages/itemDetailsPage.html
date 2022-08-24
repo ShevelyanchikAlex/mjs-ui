@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/itemDetailsStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#load").load("./general/header.html");
+        });
+    </script>
+    <title>Item Details</title>
+</head>
+
+<div id="load"></div>
+<body>
+<div class="element-item">
+    <div class="card">
+        <div class="column">
+            <img class="card-image"
+                 src="https://media.gq-magazine.co.uk/photos/62876ff58c9e44d5e0a08b7a/master/w_1920,h_1280,c_limit/Jeans_0004_Levis.jpg"
+                 alt="Denim Jeans">
+        </div>
+        <div class="column">
+            <h1 class="card-name">Tailored Jeans</h1>
+            <p class="card-description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem
+                jeamsun denim lorem jeansum. jeamsun denim lorem jeansum. jeamsun denim lorem jeansum. jeamsun denim
+                lorem jeansum. jeamsun denim lorem jeansum. jeamsun denim lorem jeansum. jeamsun denim
+                lorem jeansum jeamsun denim lorem jeansum. jeamsun denim lorem jeansum. jeamsun denim
+                lorem jeansum
+            </p>
+            <p class="card-price">$19.99</p>
+            <p class="update-date">Last Update: 18.08.2022</p>
+            <div id="buttons-column" class="column">
+                <button id="back-button" class="card-button">Back</button>
+                <button id="add-button" class="card-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

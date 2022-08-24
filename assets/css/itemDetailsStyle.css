@@ -4,21 +4,24 @@ body {
     background: linear-gradient(120deg, #5caee3, #26417c);
 }
 
-.elements-container {
-    padding-left: 5%;
-    padding-right: 5%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 .element-item {
     margin: 5%;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+}
+
+.card:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
 }
 
 .card-image {
@@ -37,18 +40,19 @@ body {
 }
 
 .card-price {
-    color: grey;
+    color: black;
+    font-weight: bold;
     font-size: 1.3rem;
 }
 
-.card-description {
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+.update-date {
+    color: #9b9999;
     font-size: 1rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    padding: 0 15px;
 }
 
 .card-button {
@@ -59,10 +63,20 @@ body {
     background-color: #fff;
     text-align: center;
     cursor: pointer;
-    width: 80%;
     font-size: 1rem;
+    width: 20%;
+    margin: 0 2%;
 }
 
 .card button:hover {
     opacity: 0.7;
+}
+
+#buttons-column {
+    width: 100%;
+}
+
+#add-button {
+    background: #2691d9;
+    color: white;
 }
