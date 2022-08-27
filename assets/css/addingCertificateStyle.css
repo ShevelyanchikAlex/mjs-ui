@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #5caee3, #26417c);
     height: 100vh;
     overflow: hidden;
+    background: linear-gradient(to bottom right, #b2d0f6, #FAFCFF);
 }
 
 .add-certificate-container {

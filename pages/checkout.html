@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/checkoutStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../../assets/js/page-loader.js"></script>
+    <script>
+        $(function () {
+            $("#load").load("./general/header.html");
+        });
+    </script>
+    <title>Checkout</title>
+</head>
+<div id="load"></div>
+<body>
+<div class="card-container">
+    <div class="card-header-container">
+        <h3 class="card-header-name">Shopping Cart</h3>
+        <h5 class="card-header-action">Remove all</h5>
+    </div>
+    <hr class="header-line">
+
+
+    <div class="card-item">
+        <div class="image-box">
+            <img class="image" src="https://i.insider.com/55a94458371d2279018b760e?width=1300&format=jpeg&auto=webp"/>
+        </div>
+        <div class="card-item-info">
+            <h1 class=”name”>Apple Juice</h1>
+            <h3 class=”description”>250ml</h3>
+        </div>
+        <div class="card-counter">
+            <div class="card-counter-button">+</div>
+            <div class="card-count">2</div>
+            <div class="card-counter-button">-</div>
+        </div>
+
+        <div class="card-price">
+            <div class="amount">$3.05</div>
+            <button class="remove-button">Remove</button>
+        </div>
+    </div>
+    <hr class="card-item-line">
+
+    <div class="card-item">
+        <div class="image-box">
+            <img class="image" src="https://i.insider.com/55a94458371d2279018b760e?width=1300&format=jpeg&auto=webp"/>
+        </div>
+        <div class="card-item-info">
+            <h1 class=”name”>Apple Juice</h1>
+            <h3 class=”description”>250ml</h3>
+        </div>
+        <div class="card-counter">
+            <div class="card-counter-button">+</div>
+            <div class="card-count">2</div>
+            <div class="card-counter-button">-</div>
+        </div>
+
+        <div class="card-price">
+            <div class="amount">$3.05</div>
+            <button class="remove-button">Remove</button>
+        </div>
+    </div>
+    <hr class="card-item-line">
+
+    <div class="checkout">
+        <div class="checkout-total">
+            <div>
+                <div class="total">Total</div>
+                <div class="items-count">2 items</div>
+            </div>
+            <div class="total-amount">$6.10</div>
+        </div>
+        <button class="checkout-button">Checkout</button>
+    </div>
+</div>
+</body>
+</html>

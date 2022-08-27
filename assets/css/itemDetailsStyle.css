@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #5caee3, #26417c);
+    background: linear-gradient(to bottom right, #b2d0f6, #FAFCFF);
 }
 
 .element-item {
