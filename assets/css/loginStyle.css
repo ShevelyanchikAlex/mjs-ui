@@ -101,7 +101,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    border-color: #2691d9;
+    opacity: 0.7;
     transition: .5s;
 }
 

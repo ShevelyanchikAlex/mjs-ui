@@ -7,7 +7,7 @@ body {
 
 .card-container {
     width: 70%;
-    height: 90%;
+    height: 80%;
     margin: 1% 15%;
     background-color: #ffffff;
     border-radius: 20px;
@@ -38,8 +38,20 @@ body {
     padding: 10px;
 }
 
+.card-header-action:hover {
+    background: #f55757;
+    transition: 1.5s;
+    color: white;
+}
+
 .header-line {
     width: 90%;
+}
+
+.scrollable-items-list {
+    padding: 4px;
+    height: 65%;
+    overflow-y: scroll;
 }
 
 .card-item {
@@ -62,22 +74,18 @@ body {
 }
 
 .card-item-info {
-    height: 80%;
+    height: 85%;
+    margin-left: 3%;
+    overflow: hidden;
+    max-width: 30%;
+    text-overflow: ellipsis;
 }
 
 .name {
-    padding-top: 5px;
     line-height: 10px;
-    font-size: 32px;
+    font-size: 0.6rem;
     font-weight: 800;
     color: #202020;
-}
-
-.description {
-    line-height: 10px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #909090;
 }
 
 .card-counter {
@@ -102,6 +110,11 @@ body {
     cursor: pointer;
 }
 
+.card-counter-button:hover {
+    background: #9b9999;
+    transition: .5s;
+}
+
 .card-count {
     font-size: 1.2rem;
     font-weight: bold;
@@ -109,7 +122,7 @@ body {
 }
 
 .card-price {
-    height: 80%;
+    height: 100%;
     text-align: right;
 }
 
@@ -121,20 +134,25 @@ body {
 }
 
 .remove-button {
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    height: 20%;
-    background: #E44C4C;
+    margin: 5px;
+    padding: 7px;
+    width: 85px;
+    height: 25%;
+    background: #f16a6a;
     color: white;
     border: none;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
     font-size: 0.8rem;
     align-content: center;
     justify-content: center;
+}
+
+.remove-button:hover {
+    opacity: 0.7;
+    transition: .5s;
 }
 
 .card-item-line {
@@ -145,6 +163,7 @@ body {
 
 .checkout {
     float: right;
+    margin-bottom: 2%;
     margin-right: 5%;
     width: 30%;
 }
@@ -157,27 +176,19 @@ body {
 
 .total {
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #202020;
 }
 
-.items-count {
-    padding: 5px;
-    font-size: 1.2rem;
-    line-height: 10px;
-    color: #909090;
-}
-
 .total-amount {
     padding: 5px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #202020;
 }
 
 .checkout-button {
-    margin-top: 5%;
     width: 100%;
     height: 40px;
     background: #2691d9;
@@ -187,4 +198,9 @@ body {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.checkout-button:hover {
+    opacity: 0.7;
+    transition: .5s;
 }

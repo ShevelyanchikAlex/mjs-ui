@@ -51,7 +51,19 @@ body {
     font-size: 1rem;
 }
 
-.card-button {
+.card-button-detail {
+    border: 1px solid #FA8072;
+    border-radius: 20px;
+    padding: 12px;
+    color: #FA8072;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 1rem;
+}
+
+.card-button-add {
     border: 1px solid #2691d9;
     border-radius: 20px;
     padding: 12px;
