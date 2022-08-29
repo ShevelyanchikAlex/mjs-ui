@@ -7,7 +7,7 @@ body {
 
 .card-container {
     width: 70%;
-    height: 80%;
+    height: 83%;
     margin: 1% 15%;
     background-color: #ffffff;
     border-radius: 20px;
@@ -24,24 +24,10 @@ body {
 }
 
 .card-header-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2F3841;
-}
-
-.card-header-action {
-    font-size: 1rem;
-    color: #E44C4C;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 1px solid #E44C4C;
-    padding: 10px;
-}
-
-.card-header-action:hover {
-    background: #f55757;
-    transition: 1.5s;
-    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid silver;
+    color: #2691d9;
 }
 
 .header-line {
@@ -49,7 +35,7 @@ body {
 }
 
 .scrollable-items-list {
-    padding: 4px;
+    padding: 2px;
     height: 65%;
     overflow-y: scroll;
 }
@@ -134,7 +120,7 @@ body {
 }
 
 .remove-button {
-    margin: 5px;
+    margin-top: 10%;
     padding: 7px;
     width: 85px;
     height: 25%;
