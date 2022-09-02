@@ -5,10 +5,12 @@ body {
 }
 
 .elements-container {
+    height: 800px;
     padding-left: 5%;
     padding-right: 5%;
     display: grid;
     grid-template-columns: auto auto auto;
+    overflow: auto;
 }
 
 .element-item {
