@@ -5,24 +5,12 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../assets/css/checkoutStyle.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $("#load").load("./general/header.html");
-        });
-    </script>
     <title>Checkout</title>
 </head>
-<div id="load"></div>
+<div w3-include-html="./general/header.html"></div>
 <body>
 <div class="card-container">
-<!--    <div class="card-header-container">-->
-        <h1 class="card-header-name">Shopping Cart</h1>
-<!--    </div>-->
-<!--    <hr class="header-line">-->
+    <h1 class="card-header-name">Shopping Cart</h1>
 
     <div class="scrollable-items-list">
 
@@ -123,5 +111,6 @@
         <button class="checkout-button">Checkout</button>
     </div>
 </div>
+<script src="../../assets/js/file-includer.js"></script>
 </body>
 </html>

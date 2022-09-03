@@ -1,4 +1,4 @@
-let items = new Map();
+//Sample Data items (Certificates) for Main Page
 const FLYING_ITEM = `<div class="element-item">
         <div class="card">
             <img class="card-image"
@@ -152,7 +152,6 @@ const WATER_PARK_ITEM = `       <div class="element-item">
             </div>
         </div>`;
 
-
 const DIVING_ITEM = `<div class="element-item">
             <div class="card">
                 <img class="card-image"
@@ -173,33 +172,33 @@ const DIVING_ITEM = `<div class="element-item">
             </div>
         </div>`;
 
+const BOTTOM_OFFSET = 5;
 
-items.set(1, FLYING_ITEM);
-items.set(2, DOLPHIN_DIVING_ITEM);
-items.set(3, RENT_ATV_ITEM);
-items.set(4, SUP_SURFING_ITEM);
-items.set(5, YACHTING_ITEM);
-items.set(6, HOT_AIR_BALLOON_ITEM);
-items.set(7, HORSE_RIDING_ITEM);
-items.set(8, WATER_PARK_ITEM);
-items.set(9, DIVING_ITEM);
+let itemsMap = new Map();
+itemsMap.set(1, FLYING_ITEM);
+itemsMap.set(2, DOLPHIN_DIVING_ITEM);
+itemsMap.set(3, RENT_ATV_ITEM);
+itemsMap.set(4, SUP_SURFING_ITEM);
+itemsMap.set(5, YACHTING_ITEM);
+itemsMap.set(6, HOT_AIR_BALLOON_ITEM);
+itemsMap.set(7, HORSE_RIDING_ITEM);
+itemsMap.set(8, WATER_PARK_ITEM);
+itemsMap.set(9, DIVING_ITEM);
 
+let itemsGridView = document.querySelector('#items-grid-view');
 
-
-let listElm = document.querySelector('#elements-container');
-
-let loadMore = function () {
+let loadNextElements = function () {
     for (let i = 0; i < 15; i++) {
         let item = document.createElement('div');
-        item.innerHTML = items.get(Math.floor(Math.random() * 9) + 1);
-        listElm.appendChild(item);
+        item.innerHTML = itemsMap.get(Math.floor(Math.random() * 9) + 1);
+        itemsGridView.appendChild(item);
     }
 }
 
-listElm.addEventListener('scroll', function () {
-    if (listElm.scrollTop + listElm.clientHeight + 5 >= listElm.scrollHeight) {
-        loadMore();
+itemsGridView.addEventListener('scroll', function () {
+    if (itemsGridView.scrollTop + itemsGridView.clientHeight + BOTTOM_OFFSET >= itemsGridView.scrollHeight) {
+        loadNextElements();
     }
 });
 
-loadMore();
+loadNextElements();

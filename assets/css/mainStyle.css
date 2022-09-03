@@ -4,13 +4,14 @@ body {
     background: linear-gradient(to bottom right, #b2d0f6, #FAFCFF);
 }
 
-.elements-container {
+.items-grid-view {
     height: 800px;
     padding-left: 5%;
     padding-right: 5%;
     display: grid;
     grid-template-columns: auto auto auto;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 .element-item {
@@ -30,8 +31,8 @@ body {
 }
 
 .card-name {
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -80,4 +81,21 @@ body {
 
 .card button:hover {
     opacity: 0.7;
+}
+
+.scrollButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 5px 7px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #2691d9;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollButton:hover {
+    border: 2px solid #2691d9;
 }

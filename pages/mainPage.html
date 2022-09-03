@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../assets/css/mainStyle.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $("#load").load("./general/header.html");
-        });
-    </script>
     <title>MainPage</title>
 </head>
-<div id="load"></div>
+<div w3-include-html="./mainPageHeader.html"></div>
 <body>
-<div id="elements-container" class="elements-container">
+<div id="items-grid-view" class="items-grid-view">
 </div>
+<div onclick="scrollToTop()" class="scrollButton"><span class="material-icons">expand_less</span></div>
+<script src="../../assets/js/file-includer.js"></script>
 <script src="../../assets/js/infinity-loader.js"></script>
+<script src="../../assets/js/search-filter.js"></script>
+<script src="../../assets/js/scroll-to-top.js"></script>
 </body>
 </html>
