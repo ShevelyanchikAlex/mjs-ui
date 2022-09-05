@@ -173,6 +173,7 @@ const DIVING_ITEM = `<div class="element-item">
         </div>`;
 
 const BOTTOM_OFFSET = 5;
+const DEFAULT_ELEMENTS_LOAD_COUNT = 15;
 
 let itemsMap = new Map();
 itemsMap.set(1, FLYING_ITEM);
@@ -187,8 +188,8 @@ itemsMap.set(9, DIVING_ITEM);
 
 let itemsGridView = document.querySelector('#items-grid-view');
 
-let loadNextElements = function () {
-    for (let i = 0; i < 15; i++) {
+let loadNextElements = function (count) {
+    for (let i = 0; i < count; i++) {
         let item = document.createElement('div');
         item.innerHTML = itemsMap.get(Math.floor(Math.random() * 9) + 1);
         itemsGridView.appendChild(item);
@@ -197,8 +198,8 @@ let loadNextElements = function () {
 
 itemsGridView.addEventListener('scroll', function () {
     if (itemsGridView.scrollTop + itemsGridView.clientHeight + BOTTOM_OFFSET >= itemsGridView.scrollHeight) {
-        loadNextElements();
+        loadNextElements(DEFAULT_ELEMENTS_LOAD_COUNT);
     }
 });
 
-loadNextElements();
+loadNextElements(DEFAULT_ELEMENTS_LOAD_COUNT);

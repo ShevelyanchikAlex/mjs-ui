@@ -14,6 +14,11 @@ header {
     padding-bottom: 10px;
 }
 
+.certificate-shop-logo {
+    height: 35px;
+    width: 35px;
+}
+
 .logo .material-icons {
     color: #2691d9;
     pointer-events: none;
@@ -22,7 +27,7 @@ header {
 .certificate-shop-name {
     padding-left: 15px;
     color: #2691d9;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -42,7 +47,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 45%;
+    width: 40%;
     padding: 10px 10px;
 }
 
