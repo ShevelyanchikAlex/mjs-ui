@@ -1,3 +1,5 @@
+'use strict';
+
 const W3_INCLUDE_HTML_ATTRIBUTE = "w3-include-html";
 const PAGE_NOT_FOUND = "Page not found.";
 

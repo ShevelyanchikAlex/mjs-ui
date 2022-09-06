@@ -1,3 +1,5 @@
+'use strict';
+
 //Sample Data items (Certificates) for Main Page
 const FLYING_ITEM = `<div class="element-item">
         <div class="card">

@@ -1,3 +1,5 @@
+'use strict';
+
 function filterBySearchInput() {
     let input = document.getElementById('search-form-input');
     let filter = input.value.toUpperCase();

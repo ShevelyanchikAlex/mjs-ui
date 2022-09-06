@@ -1,3 +1,5 @@
+'use strict';
+
 let itemsGridViewScroll = document.getElementById('items-grid-view');
 itemsGridViewScroll.addEventListener("scroll", updateScrollData);
 
