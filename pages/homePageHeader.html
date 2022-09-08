@@ -18,30 +18,14 @@
             <input id="search-form-input" class="search-form-input" type="search" name="search"
                    onkeyup="filterBySearchInput()" placeholder="Search...">
 
-            <details id="dropdown" class="dropdown">
-                <summary class="dropdown-button">
-                    <span id="selected-item" class="selected-item">Name</span>
-                </summary>
-
-                <details-menu class="dropdown-menu">
-                    <div class="dropdown-menu-header">Select Categories</div>
-                    <div id="dropdown-menu-list" class="dropdown-menu-list">
-                        <label class="dropdown-menu-item">
-                            <input type="radio" name="item" value="Name">
-                            <span>Name</span>
-                        </label>
-                        <label class="dropdown-menu-item">
-                            <input type="radio" name="item" value="Description">
-                            <span>Description</span>
-                        </label>
-                        <label class="dropdown-menu-item">
-                            <input type="radio" name="item" value="Tag">
-                            <span>Tag</span>
-                        </label>
-                    </div>
-                </details-menu>
-
-            </details>
+            <div id="dropdown" class="dropdown" onclick="classList.toggle('active')">
+                <input type="text" class="textBox" placeholder="Name" value="Name" readonly>
+                <div class="option">
+                    <div onclick="changeSelectedItem('Name')">Name</div>
+                    <div onclick="changeSelectedItem('Description')">Description</div>
+                    <div onclick="changeSelectedItem('Tag')">Tag</div>
+                </div>
+            </div>
         </div>
     </div>
 
